@@ -96,7 +96,7 @@ export default function ListaAlunos() {
   return (
     <div
       style={{
-        maxWidth: 1200,
+        maxWidth: 1000,
         margin: "24px auto",
         background: "#fff",
         padding: 24,
@@ -128,7 +128,7 @@ export default function ListaAlunos() {
           value={filtroNome}
           onChange={(e) => setFiltroNome(e.target.value)}
           allowClear
-          style={{ width: 300 }}
+          style={{ width: 200 }}
         />
         <Button type="primary" onClick={carregarLista}>
           Atualizar
@@ -144,10 +144,10 @@ export default function ListaAlunos() {
           dataSource={dados}
           columns={colunas}
           rowKey="id"
-          pagination={{ pageSize: 10 }}
-          scroll={{ x: 800 }}
+          pagination={{ pageSize: 6 }}
         />
       )}
     </div>
   );
 }
+
