@@ -58,7 +58,7 @@ export default function InscricaoForm() {
 
   if (loading && alunos.length === 0) {
     return (
-      <div style={{ textAlign: "center", marginTop: 50 }}>
+      <div style={{ textAlign: "center", marginTop: 20 }}>
         <Spin size="large" />
       </div>
     );
@@ -70,12 +70,12 @@ export default function InscricaoForm() {
         maxWidth: 800,
         margin: "24px auto",
         background: "#fff",
-        padding: 32,
+        padding: 24,
         borderRadius: 8,
         boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
       }}
     >
-      <h2 style={{ textAlign: "center", marginBottom: 24 }}>
+      <h2 style={{ textAlign: "center", marginBottom: 20 }}>
         Nova Inscrição
       </h2>
 
@@ -84,7 +84,7 @@ export default function InscricaoForm() {
         description="Ao inscrever o aluno em um curso, uma matrícula única será gerada automaticamente para esta inscrição específica."
         type="info"
         showIcon
-        style={{ marginBottom: 24 }}
+        style={{ marginBottom: 20 }}
       />
 
       <Form form={form} layout="vertical" onFinish={onFinish}>
@@ -141,3 +141,4 @@ export default function InscricaoForm() {
     </div>
   );
 }
+
