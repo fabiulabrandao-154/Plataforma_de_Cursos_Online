@@ -149,7 +149,7 @@ export default function InstrutorForm() {
 
   if (loading && editando) {
     return (
-      <div style={{ textAlign: "center", marginTop: 50 }}>
+      <div style={{ textAlign: "center", marginTop: 20 }}>
         <Spin size="large" />
       </div>
     );
@@ -158,15 +158,15 @@ export default function InstrutorForm() {
   return (
     <div
       style={{
-        maxWidth: 900,
+        maxWidth: 800,
         margin: "24px auto",
         background: "#fff",
-        padding: 32,
+        padding: 24,
         borderRadius: 8,
         boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
       }}
     >
-      <h2 style={{ textAlign: "center", marginBottom: 24 }}>
+      <h2 style={{ textAlign: "center", marginBottom: 20 }}>
         {editando ? "Editar Instrutor" : "Cadastrar Instrutor"}
       </h2>
 
@@ -238,3 +238,4 @@ export default function InstrutorForm() {
     </div>
   );
 }
+
