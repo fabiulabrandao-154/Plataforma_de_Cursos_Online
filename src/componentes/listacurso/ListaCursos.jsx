@@ -92,7 +92,7 @@ export default function ListaCursos() {
   return (
     <div
       style={{
-        maxWidth: 1200,
+        maxWidth: 1000,
         margin: "24px auto",
         background: "#fff",
         padding: 24,
@@ -140,10 +140,10 @@ export default function ListaCursos() {
           dataSource={dados}
           columns={colunas}
           rowKey="id"
-          pagination={{ pageSize: 10 }}
-          scroll={{ x: 800 }}
+          pagination={{ pageSize: 6 }}
         />
       )}
     </div>
   );
 }
+
