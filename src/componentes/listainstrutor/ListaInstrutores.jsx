@@ -106,7 +106,7 @@ export default function ListaInstrutores() {
   return (
     <div
       style={{
-        maxWidth: 1200,
+        maxWidth: 1000,
         margin: "24px auto",
         background: "#fff",
         padding: 24,
@@ -154,10 +154,10 @@ export default function ListaInstrutores() {
           dataSource={dados}
           columns={colunas}
           rowKey="id"
-          pagination={{ pageSize: 10 }}
-          scroll={{ x: 900 }}
+          pagination={{ pageSize: 6 }}
         />
       )}
     </div>
   );
 }
+
