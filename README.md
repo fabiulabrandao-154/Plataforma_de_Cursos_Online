@@ -13,19 +13,24 @@ O sistema possui **CRUDs completos**, **relacionamentos entre entidades**, **ger
 
 ---
 
-## ▶️ Execução
+## ▶️ Execução da Aplicação
 
-### Local
+### Execução Local
 ```bash
 npm install
 npm run dev
 
+---
 
 Acesse: http://localhost:5173
+
+---
 
 Produção
 npm run build
 npm run preview
+
+---
 
 🧭 Visão Geral
 
@@ -38,6 +43,8 @@ Arquitetura: DAO (Data Access Object)
 Entidades
 
 Instrutor · Curso · Aluno · Inscrição · Endereço · Telefone
+
+---
 
 🧰 Tecnologias
 
@@ -52,6 +59,8 @@ Ant Design
 React Router DOM
 
 Day.js
+
+---
 
 🎯 Funcionalidades
 Instrutores
@@ -94,6 +103,8 @@ Filtros por curso e aluno
 
 Estatísticas automáticas
 
+---
+
 ⚙️ Requisitos
 Funcionais
 
@@ -117,14 +128,42 @@ Interface responsiva
 
 Validação de formulários
 
+---
+
 📂 Estrutura Principal
 src/
 ├── componentes/
+│   ├── cadastrainstrutor/    # Formulário de instrutor
+│   ├── cadastracurso/         # Formulário de curso
+│   ├── cadastraaluno/         # Formulário de aluno
+│   ├── cadastrainscricao/     # Formulário de inscrição
+│   ├── listainstrutor/        # Listagem de instrutores
+│   ├── listacurso/            # Listagem de cursos
+│   ├── listaaluno/            # Listagem de alunos
+│   ├── listainscricao/        # Listagem de inscrições
+│   ├── visualizainstrutor/    # Detalhes do instrutor
+│   ├── visualizacurso/        # Detalhes do curso
+│   ├── visualizaaluno/        # Detalhes do aluno
+│   └── relatorio/             # Relatório de inscrições
 ├── layout/
+│   └── MainLayout.jsx        # Layout principal
 ├── objetos/
-│   ├── dao/
-│   └── pessoas/
+│   ├── dao/                  # Data Access Objects (LocalStorage)
+│   │   ├── InstrutorDAO.mjs
+│   │   ├── CursoDAO.mjs
+│   │   ├── AlunoDAO.mjs
+│   │   └── InscricaoDAO.mjs
+│   └── pessoas/              # Classes de modelo
+│       ├── Pessoa.mjs
+│       ├── Instrutor.mjs
+│       ├── Aluno.mjs
+│       ├── Curso.mjs
+│       ├── Endereco.mjs
+│       └── Telefone.mjs
 └── routes/
+    └── AppRoutes.jsx         # Configuração de rotas
+
+---
 
 👥 Autoria
 
