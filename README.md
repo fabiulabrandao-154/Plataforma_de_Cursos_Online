@@ -1,4 +1,3 @@
-Poderia ser bem objetivo e claro
 # 🎓 Sistema de Gerenciamento de Cursos — FrontEnd
 
 Aplicação **FrontEnd** desenvolvida em **React 18** com **Vite** e **Ant Design** para gerenciamento de **instrutores, cursos, alunos e inscrições**.  
