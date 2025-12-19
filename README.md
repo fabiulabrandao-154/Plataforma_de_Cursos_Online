@@ -1,53 +1,50 @@
 # 🎓 Sistema de Gerenciamento de Cursos — FrontEnd
 
-Aplicação **FrontEnd** desenvolvida em **React 18** com **Vite** e **Ant Design** para gerenciamento de **instrutores, cursos, alunos e inscrições**.  
-O sistema possui **CRUDs completos**, **relacionamentos entre entidades**, **geração automática de matrículas**, **relatórios** e **persistência via LocalStorage**, seguindo boas práticas de arquitetura (**DAO**).
+Aplicação **FrontEnd** desenvolvida em **React 18**, utilizando **Vite** e **Ant Design**, para o gerenciamento de **instrutores, cursos, alunos e inscrições**.
+
+O sistema implementa **CRUDs completos**, **relacionamentos entre entidades**, **geração automática de matrículas**, **relatórios** e **persistência de dados via LocalStorage**, seguindo boas práticas de arquitetura com o padrão **DAO (Data Access Object)**.
 
 ---
 
 ## 🌐 Deploy
+
 🔗 https://plataforma-de-cursos-online.vercel.app/
 
+---
+
 ## 📦 Repositório
+
 🔗 https://github.com/fabiulabrandao-154/Plataforma_de_Cursos_Online
 
 ---
 
 ## ▶️ Execução da Aplicação
 
-### Execução Local
+### ▶️ Execução Local
+
 ```bash
 npm install
 npm run dev
+Acesse no navegador:
+👉 http://localhost:5173
 
----
-
-Acesse: http://localhost:5173
-
----
-
-Produção
+📦 Produção
+bash
+Copiar código
 npm run build
 npm run preview
 
----
-
 🧭 Visão Geral
-
 Domínio: Gerenciamento Educacional
 
 Persistência: LocalStorage
 
 Arquitetura: DAO (Data Access Object)
 
-Entidades
-
+📌 Entidades
 Instrutor · Curso · Aluno · Inscrição · Endereço · Telefone
 
----
-
-🧰 Tecnologias
-
+🧰 Tecnologias Utilizadas
 React 18
 
 Vite
@@ -60,80 +57,78 @@ React Router DOM
 
 Day.js
 
----
-
 🎯 Funcionalidades
-Instrutores
+
+👨‍🏫 Instrutores
 
 CRUD completo
 
-Especialidades
+Gerenciamento de especialidades
 
-Endereço com busca por CEP (ViaCEP)
+Endereço com busca automática por CEP (ViaCEP)
 
 Múltiplos telefones
 
-Cursos
+📚 Cursos
 
 CRUD completo
 
 Vínculo com instrutor
 
-Alunos
-
+👩‍🎓 Alunos
 CRUD completo
 
-Endereço com busca por CEP
+Endereço com busca automática por CEP
 
 Múltiplos telefones
 
-Inscrições
-
+📝 Inscrições
 Inscrição de alunos em cursos
 
-Matrícula automática por curso
+Geração automática de matrícula por curso
 
-Validação de duplicidade
+Validação para evitar duplicidade
 
-Relatórios
-
-Inscrições por curso e instrutor
+📊 Relatórios
+Relatório de inscrições por curso e instrutor
 
 Filtros por curso e aluno
 
 Estatísticas automáticas
 
----
-
 ⚙️ Requisitos
-Funcionais
 
-Cadastro, listagem, visualização, edição e exclusão de instrutores, cursos e alunos
+✔️ Requisitos Funcionais
+Cadastro, listagem, visualização, edição e exclusão de:
+
+Instrutores
+
+Cursos
+
+Alunos
 
 Inscrição em cursos com matrícula automática
 
-Relatórios de inscrições
+Geração de relatórios de inscrições
 
-Não Funcionais
+✔️ Requisitos Não Funcionais
 
-React 18
+Aplicação desenvolvida em React 18
 
-Ant Design
+Interface construída com Ant Design
 
-LocalStorage
+Persistência de dados via LocalStorage
 
-Arquitetura DAO
+Uso do padrão DAO
 
 Interface responsiva
 
 Validação de formulários
 
----
-
-📂 Estrutura Principal
+📂 Estrutura Principal do Projeto
 src/
 ├── componentes/
-│   ├── cadastrainstrutor/    # Formulário de instrutor
+│   ├── cadastrainstrutor/     # Formulário de instrutor
 │   ├── cadastracurso/         # Formulário de curso
 │   ├── cadastraaluno/         # Formulário de aluno
 │   ├── cadastrainscricao/     # Formulário de inscrição
@@ -146,14 +141,14 @@ src/
 │   ├── visualizaaluno/        # Detalhes do aluno
 │   └── relatorio/             # Relatório de inscrições
 ├── layout/
-│   └── MainLayout.jsx        # Layout principal
+│   └── MainLayout.jsx         # Layout principal
 ├── objetos/
-│   ├── dao/                  # Data Access Objects (LocalStorage)
+│   ├── dao/                   # Data Access Objects (LocalStorage)
 │   │   ├── InstrutorDAO.mjs
 │   │   ├── CursoDAO.mjs
 │   │   ├── AlunoDAO.mjs
 │   │   └── InscricaoDAO.mjs
-│   └── pessoas/              # Classes de modelo
+│   └── pessoas/               # Classes de modelo
 │       ├── Pessoa.mjs
 │       ├── Instrutor.mjs
 │       ├── Aluno.mjs
@@ -161,14 +156,14 @@ src/
 │       ├── Endereco.mjs
 │       └── Telefone.mjs
 └── routes/
-    └── AppRoutes.jsx         # Configuração de rotas
-
----
+    └── AppRoutes.jsx          # Configuração de rotas
 
 👥 Autoria
+Autoras:
 
-Autoras: Alanís Leal de Deus | Fabíula de Araujo Brandão
+Alanís Leal de Deus
+
+Fabíula de Araujo Brandão
 
 Projeto: Bolsa Futuro Digital (BFD)
-
 Instituição: Instituto Federal de Brasília (IFB)
