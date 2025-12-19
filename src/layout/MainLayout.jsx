@@ -127,7 +127,7 @@ function MainLayout() {
   ];
 
   return (
-    <Layout style={{ minHeight: "100vh", background: "#f7f7f7" }}>
+    <Layout style={{ height: "100vh", background: "#f7f7f7" }}>
       {/* ===== Cabeçalho ===== */}
       <Header
         style={{
@@ -198,16 +198,24 @@ function MainLayout() {
 
       {/* ===== Conteúdo principal ===== */}
       <Content
-        style={{
-          padding: "24px",
-          background: "#ffffff",
-          margin: "24px",
-          borderRadius: "8px",
-          boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
-        }}
-      >
-        <Outlet />
-      </Content>
+  style={{
+    flex: 1,
+    overflowY: "auto",        // ✅ ativa rolagem
+    padding: 24,
+  }}
+>
+  <div
+    style={{
+      background: "#ffffff",
+      borderRadius: 8,
+      boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
+      padding: 24,
+      minHeight: "100%",
+    }}
+  >
+    <Outlet />
+  </div>
+</Content>
 
       {/* ===== Rodapé ===== */}
       <Footer
