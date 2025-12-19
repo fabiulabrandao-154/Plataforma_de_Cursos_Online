@@ -168,7 +168,3 @@ Autoras:
 
 Projeto: Bolsa Futuro Digital (BFD)
 Instituição: Instituto Federal de Brasília (IFB)
-
-
-Projeto: Bolsa Futuro Digital (BFD)
-Instituição: Instituto Federal de Brasília (IFB)
