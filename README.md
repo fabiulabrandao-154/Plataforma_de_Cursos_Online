@@ -1,131 +1,115 @@
-# 🎓 Sistema de Gerenciamento de Cursos — FrontEnd
+# 📝 Atividade – Sistema de Gerenciamento de Cursos (FrontEnd)
 
-Aplicação **FrontEnd** desenvolvida em **React 18**, utilizando **Vite** e **Ant Design**, para o gerenciamento de **instrutores, cursos, alunos e inscrições**.
+Considere os arquivos e repositórios a seguir como base para a realização da atividade:
 
-O sistema implementa **CRUDs completos**, **relacionamentos entre entidades**, **geração automática de matrículas**, **relatórios** e **persistência de dados via LocalStorage**, seguindo boas práticas de arquitetura com o padrão **DAO (Data Access Object)**.
+1) Repositório do projeto FrontEnd  
+👉 https://github.com/fabiulabrandao-154/Plataforma_de_Cursos_Online
 
----
-
-## 🌐 Deploy
-
-🔗 https://plataforma-de-cursos-online.vercel.app/
+2) Deploy da aplicação  
+👉 https://plataforma-de-cursos-online.vercel.app/
 
 ---
 
-## 📦 Repositório
+## 🎯 Objetivo do Desafio
 
-🔗 https://github.com/fabiulabrandao-154/Plataforma_de_Cursos_Online
+Desenvolver uma aplicação **FrontEnd** completa para o **Cursos Online**, permitindo:
+
+- Cadastro, edição, listagem, visualização e exclusão de:
+  - **Instrutores**
+  - **Cursos**
+  - **Alunos**
+- Realização de **inscrições de alunos em cursos**
+- Geração automática de **matrículas**
+- Emissão de **relatórios**
+- Persistência de dados utilizando **LocalStorage**, com aplicação do padrão **DAO (Data Access Object)**
+
+---
+
+# ✅ Implementação Concluída
+
+As funcionalidades foram implementadas com sucesso, atendendo aos requisitos propostos, garantindo o correto funcionamento dos CRUDs, dos relacionamentos entre entidades e da persistência dos dados no navegador.
+
+---
+
+## 📦 Implementação da Arquitetura DAO
+
+O sistema utiliza o padrão **DAO (Data Access Object)** para encapsular todas as operações de acesso aos dados armazenados no **LocalStorage**.
+
+### **InstrutorDAO.mjs**
+- Cadastro, listagem, busca, atualização e exclusão de instrutores
+- Persistência dos dados pessoais, especialidades, endereço e telefones
+
+### **CursoDAO.mjs**
+- Cadastro e gerenciamento de cursos
+- Vinculação de cursos a instrutores
+- Filtros por título e instrutor
+
+### **AlunoDAO.mjs**
+- Cadastro e gerenciamento de alunos
+- Persistência de dados pessoais, endereço, telefones e data de cadastro
+
+### **InscricaoDAO.mjs**
+- Gerenciamento das inscrições
+- Validação para evitar duplicidade
+- Geração automática de matrícula
+- Geração de relatórios
+
+---
+
+## 📝 Funcionalidades Implementadas
+
+### ✔ Instrutores
+- CRUD completo
+- Especialidades
+- Endereço com busca automática por CEP (ViaCEP)
+- Múltiplos telefones
+
+### ✔ Cursos
+- CRUD completo
+- Vínculo com instrutor
+
+### ✔ Alunos
+- CRUD completo
+- Endereço com busca automática por CEP
+- Múltiplos telefones
+
+### ✔ Inscrições
+- Inscrição de alunos em cursos
+- Geração automática de matrícula por curso
+- Validação de duplicidade
+- Exclusão de inscrições
+
+---
+
+## 📊 Relatórios
+
+- Relatório de inscrições por curso e instrutor
+- Filtros por curso e aluno
+- Estatísticas automáticas, incluindo:
+  - Total de inscrições
+  - Cursos com inscrições
+  - Média de inscrições por curso
 
 ---
 
 ## ▶️ Execução da Aplicação
 
-### ▶️ Execução Local
+### Execução Local
 
 ```bash
 npm install
 npm run dev
+
 Acesse no navegador:
 👉 http://localhost:5173
 
-📦 Produção
-bash
-Copiar código
+Produção
+
 npm run build
 npm run preview
 
-🧭 Visão Geral
-Domínio: Gerenciamento Educacional
-
-Persistência: LocalStorage
-
-Arquitetura: DAO (Data Access Object)
-
-📌 Entidades
-Instrutor · Curso · Aluno · Inscrição · Endereço · Telefone
-
-🧰 Tecnologias Utilizadas
-React 18
-
-Vite
-
-JavaScript (ES6+)
-
-Ant Design
-
-React Router DOM
-
-Day.js
-
-🎯 Funcionalidades
-
-👨‍🏫 Instrutores
-
-CRUD completo
-
-Gerenciamento de especialidades
-
-Endereço com busca automática por CEP (ViaCEP)
-
-Múltiplos telefones
-
-📚 Cursos
-
-CRUD completo
-
-Vínculo com instrutor
-
-👩‍🎓 Alunos
-CRUD completo
-
-Endereço com busca automática por CEP
-
-Múltiplos telefones
-
-📝 Inscrições
-Inscrição de alunos em cursos
-
-Geração automática de matrícula por curso
-
-Validação para evitar duplicidade
-
-📊 Relatórios
-Relatório de inscrições por curso e instrutor
-
-Filtros por curso e aluno
-
-Estatísticas automáticas
-
-⚙️ Requisitos
-
-✔️ Requisitos Funcionais
-Cadastro, listagem, visualização, edição e exclusão de:
-
-Instrutores
-
-Cursos
-
-Alunos
-
-Inscrição em cursos com matrícula automática
-
-Geração de relatórios de inscrições
-
-✔️ Requisitos Não Funcionais
-
-Aplicação desenvolvida em React 18
-
-Interface construída com Ant Design
-
-Persistência de dados via LocalStorage
-
-Uso do padrão DAO
-
-Interface responsiva
-
-Validação de formulários
-
 📂 Estrutura Principal do Projeto
+
 src/
 ├── componentes/
 │   ├── cadastrainstrutor/     # Formulário de instrutor
@@ -158,12 +142,33 @@ src/
 └── routes/
     └── AppRoutes.jsx          # Configuração de rotas
 
+📌 Resultado Final
+
+O sistema atende integralmente aos objetivos da atividade, apresentando:
+
+- CRUDs completos e funcionais
+
+- Relacionamentos entre entidades
+
+- Persistência de dados via LocalStorage
+
+- Arquitetura baseada no padrão DAO
+
+- Interface responsiva e organizada
+
+- Relatórios e geração automática de matrículas
+
 👥 Autoria
+
 Autoras:
 
-Alanís Leal de Deus
+- Alanís Leal de Deus
 
-Fabíula de Araujo Brandão
+- Fabíula de Araujo Brandão
+
+Projeto: Bolsa Futuro Digital (BFD)
+Instituição: Instituto Federal de Brasília (IFB)
+
 
 Projeto: Bolsa Futuro Digital (BFD)
 Instituição: Instituto Federal de Brasília (IFB)
