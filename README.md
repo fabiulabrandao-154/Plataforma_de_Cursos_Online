@@ -1,6 +1,6 @@
-# 📝 Atividade – Sistema de Gerenciamento de Cursos (FrontEnd)
+# 🎓 Sistema de Gerenciamento de Cursos (FrontEnd)
 
-Considere os arquivos e repositórios a seguir como base para a realização da atividade:
+Considere os arquivos e repositórios a seguir como base para a realização do Desafio:
 
 1) Repositório do projeto FrontEnd  
 👉 https://github.com/fabiulabrandao-154/Plataforma_de_Cursos_Online
