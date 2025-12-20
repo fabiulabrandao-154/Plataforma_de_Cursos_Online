@@ -407,8 +407,11 @@ O sistema atende integralmente aos objetivos da atividade, apresentando:
 - Fabíula de Araujo Brandão
 
 **Projeto:** Bolsa Futuro Digital (BFD)
+
 **Área:** Desenvolvimento FrontEnd
+
 **Instituição:** Instituto Federal de Brasília (IFB)
+
 
 ---
 
