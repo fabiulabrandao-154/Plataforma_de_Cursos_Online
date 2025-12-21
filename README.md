@@ -9,13 +9,19 @@ Aplicação FrontEnd desenvolvida em **ReactJS** para gerenciamento de **Instrut
 - 🔗 **FrontEnd (produção):**
   https://plataforma-de-cursos-online.vercel.app/
 
+  - 🔗 **FrontEnd (produção) [COMPLETA]:**
+  https://rota-de-ensino.vercel.app/
+
 ---
 
 ## 📦 Repositórios do Projeto
 
 - 🔗 **FrontEnd (ReactJS):**
   https://github.com/fabiulabrandao-154/Plataforma_de_Cursos_Online
-
+  
+- 🔗 **FrontEnd (ReactJS) [COMPLETO]:**
+  https://github.com/fabiulabrandao-154/Rota_de_Ensino
+  
 ---
 
 ## 🧭 Visão Geral do Projeto
