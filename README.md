@@ -9,7 +9,7 @@ Aplicação FrontEnd desenvolvida em **ReactJS** para gerenciamento de **Instrut
 - 🔗 **FrontEnd (produção):**
   https://plataforma-de-cursos-online.vercel.app/
 
-  - 🔗 **FrontEnd (produção) [COMPLETA]:**
+- 🔗 **FrontEnd (produção) [COMPLETO]:**
   https://rota-de-ensino.vercel.app/
 
 ---
